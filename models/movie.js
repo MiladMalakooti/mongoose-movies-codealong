@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 // shortcut variable
-const Schema = mangoose.Schema;
+const Schema = mongoose.Schema;
 
 const movieSchema = new Schema({
     title: String,
@@ -13,5 +13,4 @@ const movieSchema = new Schema({
 module.exports = mongoose.model(
     'Movie',
     movieSchema
-);
-
+  );
